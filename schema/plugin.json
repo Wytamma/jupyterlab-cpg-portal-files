@@ -3,6 +3,17 @@
   "title": "jupyterlab-cpg-portal-files",
   "description": "jupyterlab-cpg-portal-files settings.",
   "type": "object",
-  "properties": {},
+  "properties": {
+    "apiToken": {
+      "type": "string",
+      "title": "API Token",
+      "description": "JWT or API key for the portal"
+    },
+    "portalUrl": {
+      "type": "string",
+      "title": "Portal URL",
+      "default": "https://portal.cpg.unimelb.edu.au"
+    }
+  },
   "additionalProperties": false
 }
