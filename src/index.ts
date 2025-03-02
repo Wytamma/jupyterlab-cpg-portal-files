@@ -66,7 +66,7 @@ function activateFileBrowser(
       if (settingRegistry) {
         const settings = await settingRegistry.load(PLUGIN_ID);
         console.log(settings);
-        const baseUrl = settings.get('baseUrl').composite as
+        const baseUrl = settings.get('portalUrl').composite as
           | string
           | null
           | undefined;
@@ -93,7 +93,7 @@ function activateFileBrowser(
       app.shell.activateById(widget.id);
     }
   });
-
+  
   // palette.addItem({ command: COMMAND_ID, category: 'CPG Portal' });
 
   const tracker = new WidgetTracker<CPGPortalFilesWidget>({
